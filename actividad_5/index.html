@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar fondo</title>
+    <link rel="stylesheet" href="CSS/misestilos.css">
+</head>
+<body>
+    <center>
+    <h2>Color de fondo aleatorio</h2>
+    <button onclick="cambiarcolor()">Cambiar Color</button>
+    </center>
+    <script>
+        function cambiarcolor(){
+         let color="#" + Math.floor(Math.random() * 16777215).toString(16);
+         document.body.style.backgroundColor=color;
+        }
+    
+
+    </script>
+</body>
+</html>
